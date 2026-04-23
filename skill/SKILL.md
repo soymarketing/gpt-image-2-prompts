@@ -7,6 +7,8 @@ description: Create, improve, and troubleshoot prompts for OpenAI `gpt-image-2` 
 
 Build prompts for `gpt-image-2` that are structured, controllable, and easy to iterate.
 
+Always apply `references/quality-bar.md` first, then load the most specific specialization for the request.
+
 ## Quick workflow
 
 1. Classify the request into one primary mode:
@@ -48,6 +50,11 @@ When enough is known, reply with:
 2. **2 variants** when useful
 3. **3 short revision prompts**
 4. **One-line note** only if a constraint is especially important
+
+If the user is reacting to a bad output, do this instead:
+1. **What is wrong** (brief diagnosis)
+2. **A better prompt**
+3. **3 surgical revision prompts**
 
 ### Tone of the output
 
@@ -99,22 +106,25 @@ Give short follow-up prompts such as:
 - For edits, say **change only X** and **keep everything else the same**.
 - For layout-sensitive work, explicitly state framing, placement, negative space, and subject size.
 - For dense text, posters, labels, or infographics, specify typography, placement, and “no extra text”.
+- For infographic requests, do **not** default to a boring table/chart unless the user clearly wants a plain comparison sheet. Prefer a stronger visual concept, fewer words, and a more designed composition.
 - When the user wants consistency, repeat the invariant attributes every time.
 - Do not drown the user in prompt theory. Deliver prompts first, explanation second.
 
 ## Specialization routing
 
-After identifying the request type, load the most specific reference that fits:
+After identifying the request type:
 
-- `references/ads.md` — ads, campaign creatives, social ads, hero images, banners
-- `references/products.md` — product shots, ecommerce, packaging, beauty shots, product edits
-- `references/infographics.md` — comparison graphics, diagrams, slides, text-heavy layouts
-- `references/portraits.md` — headshots, portraits, lifestyle people images, identity-preserving edits
-- `references/frontend-web.md` — landing pages, web design concepts, SaaS heroes, dashboards, UI visuals
-- `references/patterns.md` — general fallback when none of the above are the main job
-- `references/examples.md` — example prompts to adapt when the user wants ready-made prompts fast
+1. Always apply `references/quality-bar.md`
+2. Then load the most specific reference that fits:
+   - `references/ads.md` — ads, campaign creatives, social ads, hero images, banners
+   - `references/products.md` — product shots, ecommerce, packaging, beauty shots, product edits
+   - `references/infographics.md` — comparison graphics, diagrams, slides, text-heavy layouts
+   - `references/portraits.md` — headshots, portraits, lifestyle people images, identity-preserving edits
+   - `references/frontend-web.md` — landing pages, web design concepts, SaaS heroes, dashboards, UI visuals
+   - `references/patterns.md` — general fallback when none of the above are the main job
+3. Load `references/examples.md` only if you need a ready-made structure fast
 
-Prefer loading one specialization plus examples only if needed.
+Prefer the smallest combination of references that materially improves quality.
 
 ## Output bar
 
