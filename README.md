@@ -66,14 +66,59 @@ If your workflow prefers packaged skills, download the release asset or use the 
 
 Trigger the skill when you want a better prompt for `gpt-image-2` / ChatGPT Images 2.0.
 
-Good example requests:
+The most natural way to use it is to ask for the image outcome you want, not to talk like a skill author.
 
-- `Create a premium product-shot prompt for a luxury skincare bottle`
-- `Improve this gpt-image-2 prompt for a SaaS landing page hero`
-- `Write a prompt for a clean comparison infographic with perfect text legibility`
-- `Make this portrait prompt more editorial but keep the same person`
-- `Generate a web design prompt for a fintech dashboard`
-- `Fix this image prompt: it looks too generic and cluttered`
+More natural example requests:
+
+- `Hazme un prompt para una foto de producto premium de un serum de lujo.`
+- `Mejora este prompt para que la landing de mi SaaS se vea más premium.`
+- `Quiero una infografía comparativa clara, elegante y con texto súper legible.`
+- `Quiero mantener la misma persona pero con look más editorial.`
+- `Necesito una imagen estilo dashboard fintech moderno.`
+- `Este prompt me está saliendo muy genérico y saturado, ayúdame a arreglarlo.`
+
+The same idea in English:
+
+- `Make me a prompt for a premium skincare product shot.`
+- `Improve this prompt so my SaaS landing page looks more premium.`
+- `I need a clean comparison infographic with very legible text.`
+- `Keep the same person, but make the portrait feel more editorial.`
+- `I want a modern fintech dashboard visual.`
+- `This prompt keeps coming out generic and cluttered. Help me fix it.`
+
+### Specialization examples
+
+The skill includes specialized playbooks. You do not need to name them explicitly, but these examples show the kinds of requests each one is meant to handle.
+
+#### Ads / campaign creatives
+
+- `Hazme un prompt para un anuncio premium de café con espacio para copy.`
+- `Quiero una imagen hero para campaña de Meta Ads de una marca de skincare.`
+- `Make this ad visual feel more expensive and conversion-focused.`
+
+#### Products / ecommerce / packaging
+
+- `Necesito una foto de producto limpia para ecommerce con fondo blanco.`
+- `Hazme un prompt para un beauty shot de un perfume de lujo.`
+- `Edita esta imagen: cambia solo el fondo y deja intacto el empaque.`
+
+#### Infographics / diagrams / text-heavy visuals
+
+- `Quiero una infografía comparativa de dos herramientas con texto muy claro.`
+- `Hazme un prompt para un diagrama de 4 pasos con estilo editorial.`
+- `I need a slide-ready visual with crisp labels and no extra text.`
+
+#### Portraits / identity-preserving edits
+
+- `Hazme un retrato profesional estilo editorial para LinkedIn.`
+- `Quiero la misma persona pero con un fondo más premium y oscuro.`
+- `Keep the same face and expression, just make the portrait warmer and more flattering.`
+
+#### Frontend / web design / SaaS heroes / dashboards
+
+- `Hazme un prompt para una landing SaaS premium.`
+- `Quiero un dashboard fintech moderno, limpio y fácil de escanear.`
+- `Make this homepage concept feel less template-like and more premium.`
 
 ### What the skill returns
 
